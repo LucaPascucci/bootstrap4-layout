@@ -1,0 +1,205 @@
+.layout-social .layout-icon {
+    font-size: 2em;
+}
+
+.layout-iconcolumns .layout-icon {
+    display: inline-block;
+    font-size: inherit;
+    overflow: visible;
+    vertical-align: -0.125;
+    text-rendering: auto;
+    fill: gray !important;
+    width: 50px;
+    height: 50px;
+}
+
+.layout-media .layout-image {
+    max-width: 200px;
+}
+
+.layout-media .layout-title {
+    font-size: 1.6em;
+    color: purple;
+    font-weight: 200;
+}
+
+.layout-media .layout-text {
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.layout-photogrid .layout-image{
+    background: lightcyan;
+}
+
+.layout-nested .layout-title{
+    font-size: 1.6em;
+    color: purple;
+    font-weight: 200;
+}
+
+.layout-nested .layout-text {
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+.layout-iconcolumns .layout-title {
+    font-size: 2.5em;
+    color: purple;
+    font-weight: 200;
+}
+
+.layout-iconcolumns .layout-text {
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+#page-carousel {
+    background: #c290d2;
+    font-weight: 200;
+}
+
+#page-multicolumn {
+    background: lightcyan;
+}
+
+.layout-multicolumn .layout-image {
+    transition: all 0.3s ease-out;
+}
+
+.layout-multicolumn .layout-image:hover {
+    /*transform: scale(1.1) translate(-3px);*/
+    transform: scale(1.1) translateY(-7px);;
+}
+
+@media screen and (max-width: 992px) {
+    .site-header .navbar-collapse {
+        background-color: #343a40;
+        border-radius: 25px;
+        margin: 5px;
+        padding: 10px;
+    }
+}
+
+.animated {
+    visibility: visible !important;
+}
+
+.site-header {
+    background: url(../images/hero.svg) no-repeat center center;
+    background-size: cover;
+}
+
+.site-header .layout-hero {
+    min-height: 50vh;
+}
+
+.site-header .page-section-title {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.site-header .page-section-text {
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.site-header .nav-link {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+
+.site-header .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: darkorange;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-out;
+}
+.site-header .nav-link:hover:before {
+    visibility: visible;
+    left: 0;
+    transform: scaleX(1);
+}
+
+.page-section-header .page-section-title {
+    font-size: 4em;
+    font-weight: 200;
+    color: purple;
+}
+
+.page-section-header .page-section-text {
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+@media screen and (min-width: 768px){
+    #page-floater {
+        margin: 150px 0 150px 0;
+    }
+
+    .layout-floater .layout-container {
+        position: relative;
+    }
+
+    .layout-floater .layout-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(15deg)
+        scale(1.1);
+    }
+}
+
+#page-floater{
+    background: lightcyan;
+}
+
+.layout-floater .layout-title {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.layout-floater .layout-text {
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+.layout-cards .layout-title {
+    color: purple;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.layout-cards .layout-text {
+    font-weight: 200;
+}
+
+/* ANIMAZIONI */
+@keyframes fademein {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fademein {
+    opacity: 0;
+    animation-name: fademein;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.site-header .animated {
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
